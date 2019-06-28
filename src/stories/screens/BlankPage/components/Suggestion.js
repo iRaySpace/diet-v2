@@ -2,21 +2,6 @@ import * as React from "react";
 import { ScrollView } from "react-native";
 import DietCard from "../../../../component/DietCard";
 
-const SUGGESTION = {
-  "Fatty Liver Disease": {
-    "Fruit": [
-      {"text": "Grapes: 7pc. 55 grams", "img": "../../../../../assets/suggestions/grapes.jpg"},
-      {"text": "Banana: 1pc. (med) 40 grams slice 55 grams", "img": "../../../../../assets/suggestions/banana.jpg"}
-    ],
-    "Meat": [
-
-    ],
-    "Fish": [
-
-    ]
-  },
-};
-
 class Suggestion extends React.Component {
   renderSuggestion() {
     const { disease, food } = this.props;
@@ -33,8 +18,16 @@ class Suggestion extends React.Component {
           image={require("../../../../../assets/suggestions/banana.jpg")}
         />,
         <DietCard
-          text="Guava: 2pcs. (sm)"
+          text="Apple: 1pcs. 35 grams"
+          image={require("../../../../../assets/suggestions/apple.jpg")}
+		/>,
+        <DietCard
+          text="Guava: 2pcs. (sm) 80 grams"
           image={require("../../../../../assets/suggestions/guava.jpg")}
+		/>,
+        <DietCard
+          text="Cashew: 1pc. 70 grams"
+          image={require("../../../../../assets/suggestions/cashew.jpg")}
         />
       ];
     }
@@ -52,6 +45,14 @@ class Suggestion extends React.Component {
         <DietCard
           text="Guava: 2pcs. (sm) 80 grams"
           image={require("../../../../../assets/suggestions/guava.jpg")}
+		 />,
+        <DietCard
+          text="Santol: 1pc. 75 grams"
+          image={require("../../../../../assets/suggestions/santol.jpg")}
+		 />,
+        <DietCard
+          text="Mangosteen: 3pcs. 3x week 55 grams"
+          image={require("../../../../../assets/suggestions/mangosteen.jpg")}
         />
       ];
     }
@@ -69,6 +70,14 @@ class Suggestion extends React.Component {
         <DietCard
           text="Santol: 1pc. 75 grams"
           image={require("../../../../../assets/suggestions/santol.jpg")}
+		/>,
+        <DietCard
+          text="Apple: 1pcs. 35 grams"
+          image={require("../../../../../assets/suggestions/apple.jpg")}
+		/>,
+        <DietCard
+          text="Banana: 1pc. (med) 2x week 40 grams"
+          image={require("../../../../../assets/suggestions/banana.jpg")}
         />
       ];
     }
@@ -83,6 +92,14 @@ class Suggestion extends React.Component {
           text="Banana: 1pc. (med) 2x week 40 grams"
           image={require("../../../../../assets/suggestions/banana.jpg")}
         />,
+        <DietCard
+          text="Cashew: 1pc. 70 grams"
+          image={require("../../../../../assets/suggestions/cashew.jpg")}
+		/>,
+        <DietCard
+          text="Banana: 1pc. (med) 2x week 40 grams"
+          image={require("../../../../../assets/suggestions/banana.jpg")}
+		/>,
         <DietCard
           text="Cashew: 1pc. 70 grams"
           image={require("../../../../../assets/suggestions/cashew.jpg")}
@@ -103,6 +120,14 @@ class Suggestion extends React.Component {
         <DietCard
           text="Mangosteen: 3pcs. 3x week 55 grams"
           image={require("../../../../../assets/suggestions/mangosteen.jpg")}
+		/>,
+        <DietCard
+          text="Banana: 1pc. (med) 2x week 40 grams"
+          image={require("../../../../../assets/suggestions/banana.jpg")}
+		/>,
+        <DietCard
+          text="Cashew: 1pc. 70 grams"
+          image={require("../../../../../assets/suggestions/cashew.jpg")}
         />
       ];
     }
@@ -122,6 +147,14 @@ class Suggestion extends React.Component {
         <DietCard
           text="Tilapia: 2pcs. 35 grams"
           image={require("../../../../../assets/suggestions/tilapia.jpg")}
+		/>,
+        <DietCard
+          text="Lapu-lapu: 1 slice. 35 grams"
+          image={require("../../../../../assets/suggestions/lapu_lapu.jpg")}
+		/>,
+        <DietCard
+          text="Dalagang Bukid. 1 slice 35 grams"
+          image={require("../../../../../assets/suggestions/dalagang_bukid.jpg")}
         />
       ];
     }
@@ -139,6 +172,14 @@ class Suggestion extends React.Component {
         <DietCard
           text="Dalagang Bukid: 1 slice. 35 grams"
           image={require("../../../../../assets/suggestions/dalagang_bukid.jpg")}
+		  />,
+        <DietCard
+          text="Tamban: 2 pieces. 35 grams"
+          image={require("../../../../../assets/suggestions/tamban.jpg")}
+		  />,
+        <DietCard
+          text="Tilapia: 2pcs. 35 grams"
+          image={require("../../../../../assets/suggestions/tilapia.jpg")}
         />
       ];
     }
@@ -156,6 +197,14 @@ class Suggestion extends React.Component {
         <DietCard
           text="Dalagang Bukid: 1 slice. 35 grams"
           image={require("../../../../../assets/suggestions/dalagang_bukid.jpg")}
+		 />,
+        <DietCard
+          text="Lapu-lapu: 1 slice. 35 grams"
+          image={require("../../../../../assets/suggestions/lapu_lapu.jpg")}
+		 />,
+        <DietCard
+          text="Tilapia: 2pcs. 35 grams"
+          image={require("../../../../../assets/suggestions/tilapia.jpg")}
         />
       ];
     }
@@ -173,6 +222,14 @@ class Suggestion extends React.Component {
         <DietCard
           text="Tamban: 2 pcs. 35 grams"
           image={require("../../../../../assets/suggestions/tamban.jpg")}
+		  />,
+        <DietCard
+          text="Tilapia: 2pcs. 35 grams"
+          image={require("../../../../../assets/suggestions/tilapia.jpg")}
+        />,
+		<DietCard
+          text="Bangus: 1 slice. 35 grams"
+          image={require("../../../../../assets/suggestions/bangus.jpg")}
         />
       ];
     }
@@ -190,6 +247,14 @@ class Suggestion extends React.Component {
         <DietCard
           text="Tamban: 2pcs. 35 grams"
           image={require("../../../../../assets/suggestions/tamban.jpg")}
+		   />,
+		    <DietCard
+          text="Bangus: 1 slice. 35 grams"
+          image={require("../../../../../assets/suggestions/bangus.jpg")}
+        />,
+		  <DietCard
+          text="Tilapia: 2pcs. 35 grams"
+          image={require("../../../../../assets/suggestions/tilapia.jpg")}
         />
       ];
     }
@@ -209,6 +274,14 @@ class Suggestion extends React.Component {
         <DietCard
           text="Chicken Breast: 1/4 breast. 30 grams"
           image={require("../../../../../assets/suggestions/chicken_breast.jpg")}
+		  />,
+        <DietCard
+          text="Beef brisket: 1 slice (small match box). 2x week 30 grams"
+          image={require("../../../../../assets/suggestions/beef_brisket.jpg")}
+		  />,
+        <DietCard
+          text="Chicken wings: 1 piece(med). 25 grams"
+          image={require("../../../../../assets/suggestions/chicken_wings.jpg")}
         />
       ];
     }
@@ -226,6 +299,14 @@ class Suggestion extends React.Component {
         <DietCard
           text="Beef Sirloin: 2x week 30 grams"
           image={require("../../../../../assets/suggestions/beef_sirloin.jpg")}
+		  />,
+        <DietCard
+          text="Beef lean meat: 1 slice. 2x week 30 grams"
+          image={require("../../../../../assets/suggestions/beef_lean_meat.jpg")}
+		  />,
+        <DietCard
+          text="Beef round: 1 slice. 2x week 30 grams"
+          image={require("../../../../../assets/suggestions/beef_round.jpg")}
         />
       ];
     }
@@ -243,6 +324,14 @@ class Suggestion extends React.Component {
         <DietCard
           text="Beef Brisket: 1 slice (small match box). 2x week 30 grams"
           image={require("../../../../../assets/suggestions/beef_brisket.jpg")}
+		  />,
+        <DietCard
+          text="Chicken Breast: 1/4 breast. 30 grams"
+          image={require("../../../../../assets/suggestions/chicken_breast.jpg")}
+		  />,
+		  <DietCard
+          text="Chicken Leg: 1 small leg. 30 grams"
+          image={require("../../../../../assets/suggestions/chicken_leg.jpg")}	  
         />
       ];
     }
@@ -260,6 +349,14 @@ class Suggestion extends React.Component {
         <DietCard
           text="Beef Round: 1 slice. 2x week 30 grams"
           image={require("../../../../../assets/suggestions/beef_round.jpg")}
+		 />,
+        <DietCard
+          text="Beef Sirloin: 2x week 30 grams"
+          image={require("../../../../../assets/suggestions/beef_sirloin.jpg")}
+		 />,
+		   <DietCard
+          text="Beef Lean Meat: 1 slice. 2x week 30 grams"
+          image={require("../../../../../assets/suggestions/beef_lean_meat.jpg")}
         />
       ];
     }
@@ -277,6 +374,14 @@ class Suggestion extends React.Component {
         <DietCard
           text="Beef Round: 1 slice. 2x week 30 grams"
           image={require("../../../../../assets/suggestions/beef_round.jpg")}
+		 />,
+        <DietCard
+          text="Chicken Breast: 1/4 breast. 30 grams"
+          image={require("../../../../../assets/suggestions/chicken_breast.jpg")}
+		 />,
+        <DietCard
+          text="Beef Sirloin: 2x week 30 grams"
+          image={require("../../../../../assets/suggestions/beef_sirloin.jpg")}
         />
       ];
     }
